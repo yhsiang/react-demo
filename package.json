@@ -1,0 +1,29 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && webpack-dev-server",
+    "dev": "webpack -d",
+    "build": "webpack -p",
+    "test": "karma"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.5.4",
+    "babel-core": "^5.5.4",
+    "babel-loader": "^5.1.4",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0",
+    "css-loader": "^0.15.2",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
