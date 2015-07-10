@@ -29,7 +29,7 @@ module.exports = {
             }
         ],
 
-        noParse: ['react', 'jquery', 'bootstrap']
+        noParse: ['react', 'jquery', 'bootstrap', 'react-router']
     },
 
     output: {
