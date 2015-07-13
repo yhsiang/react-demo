@@ -16,4 +16,5 @@ require("./css/reset.css")
 require("./css/style.css")
 
 var App = require("./js/components/App.jsx")
-React.render(<App/>, document.getElementById("container"))
+
+React.render((), document.getElementById("container"))
