@@ -1,7 +1,6 @@
-var Router = require("react-router")
-var Index=require("/")
-
-import Index from "./js/components"
+var React = require("react")
+var {Router,Route} = require("react-router")
+var Index = require("./components/Index.jsx")
 
 var router =
     <Router history={history}>
