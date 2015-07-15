@@ -15,7 +15,8 @@ require("./css/layout.css")
 require("./css/reset.css")
 require("./css/style.css")
 
-var App = require("./js/components/App.jsx")
-var Router = require("./js/Router.jsx")
-
-React.render(<Router/>, document.getElementById("container"))
+var routes = require("./js/Router.jsx")
+var Router = require("react-router")
+Router.run(routes, Router.HashLocation, (Root) => {
+  React.render(<Root />, document.getElementById("container"));
+});

@@ -9,13 +9,11 @@ var Products = require("./components/Products.jsx")
 var Services = require("./components/Services.jsx")
 
 var router =
-    <Router history={history}>
-        <Route path="/" component={App}>
-            <Route path="contacts" component={Contacts}/>
-            <Route path="news" component={News}/>
-            <Route path="products" component={Products}/>
-            <Route path="services" component={Services}/>
-        </Route>
-    </Router>
+    <Route handler={App} path="/">
+      <Route path="/contacts" handler={Contacts}/>
+      <Route path="/news" handler={News}/>
+      <Route path="/products" handler={Products}/>
+      <Route path="/services" handler={Services}/>
+    </Route>
 
 module.exports = router
