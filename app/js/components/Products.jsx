@@ -1,6 +1,6 @@
 var React = require("react")
 
-var Services = React.createClass({
+var Products = React.createClass({
     render: function () {
         return (
             <div>
@@ -10,4 +10,4 @@ var Services = React.createClass({
     }
 })
 
-module.exports = Services
+module.exports = Products
